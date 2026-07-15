@@ -17,6 +17,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 100;
 }
 
 @keyframes bounceAnimation {
@@ -85,7 +86,11 @@ main {
 }
 
 .About .container img {
-  width: 80%;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .About .container .card {
@@ -177,4 +182,34 @@ footer {
   footer {
     bottom: unset;
   }
+}
+@media (max-width: 1300px) {
+  .About .container {
+    flex-direction: column;
+  }
+}
+.btn {
+  position: relative;
+}
+.next {
+  position: absolute;
+  background: gray;
+  top: -198px;
+  right: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+.prev {
+  position: absolute;
+  background: gray;
+  top: -198px;
+  left: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
 }

@@ -25,7 +25,18 @@
   <main>
     <div class="About" id="About">
       <div class="container">
-        <img src="https://placehold.co/900x400" alt="">
+        <div class="slid">
+          <img class="img" src="img/1.jpg" alt="">
+          <img class="img" src="img/5.jpg" alt="">
+          <img class="img" src="img/3.jpg" alt="">
+          <img class="img" src="img/4.jpg" alt="">
+          <div class="btn">
+            <button class="next" onclick="plus(1)">+</button>
+            <button class="prev" onclick="plus(-1)">-</button>
+
+          </div>
+        </div>
+
         <div class="card">
           <h1>Business Name or Tagline</h1>
           <p>This is a template that is great for small businesses. It doesn't have
@@ -96,5 +107,26 @@
   </footer>
 
 </body>
+<script>
+  let imgNum = 1;
+  showimg()
+  function showimg() {
+    let imgs = document.getElementsByClassName("img")
+    for (let i = 0; i < imgs.length; i++) {
+      imgs[i].style.display = "none"
+    }
+    if (imgNum > imgs.length) {
+      imgNum = 1
+    }
+    if (imgNum < 1) {
+      imgNum = imgs.length
+    }
+    imgs[imgNum - 1].style.display = "block"
+  }
+  function plus(n) {
+    imgNum += n
+    showimg()
+  }
+</script>
 
 </html>
