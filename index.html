@@ -5,179 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HemaFars</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: sans-serif
-    }
-
-    header {
-      display: flex;
-      background-color: black;
-      color: white;
-      position: fixed;
-      width: 100%;
-      top: 0;
-
-
-    }
-
-    @keyframes bounceAnimation {
-
-      0%,
-      50% {
-        bottom: 0;
-        ;
-      }
-
-      100% {
-        bottom: 94%;
-      }
-    }
-
-    header {
-      animation-name: bounceAnimation;
-      animation-duration: 2s;
-      animation-timing-function: ease;
-      animation-direction: normal;
-      animation-fill-mode: both;
-    }
-
-    header .container {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      justify-content: space-between;
-      margin: 10px;
-      width: 80%;
-      margin: auto;
-    }
-
-    header h1 {
-      margin: 0 10px;
-    }
-
-    ul {
-      display: flex;
-    }
-
-    ul li {
-      padding: 10px;
-      margin: 10px;
-      list-style-type: none;
-      margin-right: 10px;
-    }
-
-    ul li a {
-      font-size: 20px;
-      text-decoration: none;
-      color: white;
-    }
-
-    main {
-      width: 80%;
-      margin: 65px auto;
-      min-height: 70vh;
-      top: 400px;
-    }
-
-    .About .container {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      justify-content: space-between;
-      padding: 10px;
-      margin: 10px;
-    }
-
-    .About .container img {
-      width: 80%;
-    }
-
-    .About .container .card {
-      /* background-color: gray; */
-      /* box-shadow: 0 0 10px black; */
-      padding: 10px;
-      margin: 10px;
-    }
-
-    .About .container .card h1 {}
-
-    .About .container .card p {
-      line-height: 1.5;
-    }
-
-    .About .container .card button {
-      padding: 10px 15px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: none;
-      background-color: #0d6efb;
-      color: white;
-    }
-
-    .Content {
-      display: flex;
-      background-color: #6c747e;
-      margin: 20px 0;
-    }
-
-    .Content .text {
-      padding: 30px;
-      color: white;
-      text-align: center;
-      margin: 10px;
-      width: 100%;
-    }
-
-    .Services {
-      display: flex;
-      gap: 20px;
-      margin: 20px 0;
-      justify-content: center;
-      align-items: stretch;
-    }
-
-    .Services .card {
-      border: 1px solid rgba(0, 0, 0, 0.205);
-      border-radius: 5px;
-    }
-
-    .Services .card h1 {
-      margin: 10px;
-    }
-
-    .Services .card p {
-      margin: 10px;
-      line-height: 1.5;
-    }
-
-    .anderbut {
-      background-color: #f7f7f7;
-      border-top: 1px solid rgba(0, 0, 0, 0.11);
-    }
-
-    .Services .card button {
-      padding: 10px 15px;
-      margin: 5px 10px;
-      border-radius: 5px;
-      border: none;
-      background-color: #0d6efb;
-      color: white;
-    }
-
-    footer {
-      background-color: black;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      font-size: large;
-      font-weight: bold;
-      letter-spacing: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -186,10 +14,10 @@
     <div class="container">
       <h1>HemaFars</h1>
       <ul>
-        <li><a href="">Homa</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Content</a></li>
-        <li><a href="">Services</a></li>
+        <li><a href="#Homa">Homa</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Content">Content</a></li>
+        <li><a href="#Services">Services</a></li>
       </ul>
     </div>
   </header>
@@ -204,7 +32,8 @@
             too much fancy flare to it, but it makes a great use of the standard
             project you want!</p>
           <button>
-            Call to Action!
+            <a href="pages/Business.html" target="_blank">Call to Action!</a>
+
           </button>
         </div>
       </div>
@@ -225,7 +54,8 @@
 
         <div class="anderbut">
           <button>
-            More Info
+            <a href="pages/Card_One.html " target="_blank">More Info</a>
+
           </button>
         </div>
       </div>
@@ -238,7 +68,8 @@
 
         <div class="anderbut">
           <button>
-            More Info
+            <a href="pages/Card_Two.html">More Info</a>
+
           </button>
         </div>
       </div>
@@ -251,7 +82,8 @@
 
         <div class="anderbut">
           <button>
-            More Info
+            <a href="pages/Card_Three.html">More Info</a>
+
           </button>
         </div>
 
